@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  width: calc(100vw - (100vw - 100%));
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}

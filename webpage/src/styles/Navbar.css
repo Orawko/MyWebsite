@@ -1,0 +1,32 @@
+.navBar {
+  background-color: #191e25;
+}
+
+.scrolled {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  border-bottom: 3px solid #4f8a8b;
+}
+
+.navBarItem {
+  text-decoration: none;
+  color: #eeeeee;
+  padding: 20px;
+  transition: all .3s ease-in;
+  font-size: 18px;
+
+}
+
+.navBarItem:hover {
+  color: #fbd46d;
+}
