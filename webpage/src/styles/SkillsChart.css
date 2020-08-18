@@ -1,0 +1,51 @@
+#skillsChart {
+  width: 50%;
+  padding: 2vw;
+  background-color: #fff;
+  text-align: center;
+}
+
+#skillsChartTitle {
+  font-size: 4vw;
+  margin: 1vw;
+}
+
+#chartBars {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#skillsChartBar {
+  display: flex;
+  flex-direction: row;
+  height: 5vw;
+}
+
+#chartBarKey {
+  text-align: right;
+  margin: 0.5vw;
+  line-height: 4vw;
+  width: 13vw;
+  font-size: 2vw;
+  color: #222831;
+}
+
+#chartBarValue {
+  display: flex;
+  flex-direction: row;
+  height: 4.6vw;
+  text-align: right;
+}
+
+.chartDot {
+  width: 2.4vw;
+  height: 2.4vw;
+  margin: 1.3vw 0.7vw;
+  background-color: #eeeeee;
+  border-radius: 30%;
+}
+
+.selected {
+  background-color: #4f8a8b;
+}

@@ -18,5 +18,9 @@
 
 .titleText {
   margin: 0;
-  font-family: 'Avenir Next';
+  font-family: 'Avenir Next', sans-serif;
+}
+
+.green {
+  color: #4f8a8b;
 }

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {Fragment, useEffect} from 'react';
 import '../styles/Navbar.css';
 
 function NavBar() {
@@ -16,15 +16,17 @@ function NavBar() {
     navBarClasses.push('scrolled');
   }
 
-  return <nav className={navBarClasses.join(" ")}>
-    <ul className="navMenu">
-      <li className="active"><a className="navBarItem" href="#">HOME</a></li>
-      <li><a className="navBarItem" href="#">ABOUT ME</a></li>
-      <li><a className="navBarItem" href="#">SKILLS</a></li>
-      <li><a className="navBarItem" href="#">PROJECTS</a></li>
-      <li><a className="navBarItem" href="#">CONTACT</a></li>
-    </ul>
-  </nav>
+  return <Fragment>
+    <nav className={navBarClasses.join(" ")}>
+      <ul id="navMenu">
+        <li className="active"><a className="navBarItem" href="#">HOME</a></li>
+        <li><a className="navBarItem" href="#">ABOUT ME</a></li>
+        <li><a className="navBarItem" href="#">SKILLS</a></li>
+        <li><a className="navBarItem" href="#">PROJECTS</a></li>
+        <li><a className="navBarItem" href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </Fragment>
 }
 
 export default NavBar;
