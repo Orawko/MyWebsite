@@ -2,6 +2,32 @@
   background-color: #222831;
   text-align: center;
   width: 100%;
-  height: 60vh;
   color: #eeeeee;
+  position: relative;
+  margin: -1vw 0;
+}
+
+#tree {
+  position: absolute;
+  top: -15vw;
+  left: 2vw;
+  width: 48vw;
+  height: 48vw;
+  z-index: 0;
+}
+
+#motivationContent {
+  width: 40vw;
+  padding: 0 2.5vw;
+  color: #eeeeee;
+  margin-left: 52vw;
+}
+
+#motivationTitle {
+  font-size: 4vw;
+  margin-top: 0;
+}
+
+#motivationText {
+  font-size: 2vw;
 }
