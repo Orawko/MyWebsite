@@ -4,6 +4,8 @@ import Header from "./Header";
 import NavBar from "./NavBar";
 import About from "./About";
 import Footer from "./Footer";
+import Motivation from "./Motivation";
+import Projects from "./Projects";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Header/>
       <NavBar/>
       <About/>
+      <Motivation/>
+      <Projects/>
       <div className="Skills">Js master</div>
       <div className="Projects">Architecture portfolio</div>
       <div className="Experience">Comarch</div>

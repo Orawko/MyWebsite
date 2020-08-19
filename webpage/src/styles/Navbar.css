@@ -1,5 +1,11 @@
 .navBar {
   background-color: #191e25;
+  height: 50px;
+  border-bottom: 3px solid #4f8a8b;
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  z-index: 3;
 }
 
 .scrolled {
@@ -9,13 +15,12 @@
   left: 0;
 }
 
-.navMenu {
+#navMenu {
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 10px;
   list-style-type: none;
-  border-bottom: 3px solid #4f8a8b;
 }
 
 .navBarItem {
@@ -24,7 +29,8 @@
   padding: 20px;
   transition: all .3s ease-in;
   font-size: 18px;
-
+  font-weight: bold;
+  line-height: 30px;
 }
 
 .navBarItem:hover {
