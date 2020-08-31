@@ -1,41 +1,43 @@
 import React, {Fragment} from 'react';
-import '../styles/Projects.css';
+import '../../styles/Projects.css';
 import ProjectTile from "./ProjectTile";
 
 
 const projects = [{
   title: "Architecture Portfolio",
-  img: require("../img/iconArch.jpg"),
+  img: "iconArch.jpg",
   website: "https://edytamakowiec.github.io/",
   code: "https://github.com/Orawko/ArchitecturePortfolio",
   info: {
     technologies: ["JS", "React", "RWD"],
-    date: "June 2020",
+    date: "June 2021",
     description: "One page website created for architect student. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque sem at orci iaculis, quis imperdiet dui posuere. Donec in arcu at libero hendrerit efficitur. Quisque luctus rutrum commodo. Cras semper ut nulla id maximus."
   }
 }, {
-  title: "Architecture Portfolio",
-  img: require("../img/iconArt.jpg"),
-  website: "https://edytamakowiec.github.io/",
-  code: "https://github.com/Orawko/ArchitecturePortfolio",
+  title: "Shape Generator",
+  img: "iconArt.jpg",
+  website: "https://7verr.csb.app/",
+  code: "https://github.com/Orawko/Shape-generator",
   info: {
-    technologies: ["JS", "React", "RWD"],
-    date: "June 2020",
+    technologies: ["JS", "CSS", "HTML"],
+    date: "June 2022",
     description: "One page website created for architect student. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque sem at orci iaculis, quis imperdiet dui posuere. Donec in arcu at libero hendrerit efficitur. Quisque luctus rutrum commodo. Cras semper ut nulla id maximus."
   }
 }, {
-  title: "Architecture Portfolio",
-  img: require("../img/iconGuide.jpg"),
-  website: "https://edytamakowiec.github.io/",
-  code: "https://github.com/Orawko/ArchitecturePortfolio",
+  title: "YourGuide - Mobile App",
+  img: "iconGuide.jpg",
+  website: "",
+  code: "",
   info: {
-    technologies: ["JS", "React", "RWD"],
+    technologies: ["JS", "React Native", "Node.js"],
     date: "June 2020",
     description: "One page website created for architect student. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque sem at orci iaculis, quis imperdiet dui posuere. Donec in arcu at libero hendrerit efficitur. Quisque luctus rutrum commodo. Cras semper ut nulla id maximus."
   }
 }]
 
-function Projects() {
+const Projects = () => {
+  const switchPopUp = data => alert(data);
+
   const TILE_WIDTH = window.innerWidth < 1024 ? 300 : 400;
 
   const numberOfTilesInRow = (function () {
@@ -43,8 +45,8 @@ function Projects() {
     return Math.floor(window.innerWidth / (TILE_WIDTH + (tileMargin * 2)));
   })();
 
-  const BreakingProjectTile = tileData => <Fragment>
-    {ProjectTile(tileData)}
+  const BreakingProjectTile = tileData => <Fragment key={tileData.title}>
+    {ProjectTile(tileData, switchPopUp)}
     <div className="break">{}</div>
   </Fragment>
 

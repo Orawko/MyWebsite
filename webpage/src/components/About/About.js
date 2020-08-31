@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/About.css';
+import '../../styles/About.css';
 import SkillsChart from "./SkillsChart";
 
 const data = {
@@ -17,7 +17,7 @@ function About() {
   return <div id="about">
     <div id="aboutMe">
       <div id="aboutMePhoto">
-        <img src={require('../img/me.jpg')} alt="Bartłomiej Orawiec"/>
+        <img src={require('../../img/me.jpg')} alt="Bartłomiej Orawiec"/>
       </div>
       <p id="aboutMeText">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque sem at orci iaculis, quis

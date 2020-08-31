@@ -26,11 +26,34 @@
   height: 400px;
   border-radius: 10%;
   overflow: hidden;
-  border: 10px solid #222831;
+  border: 5px solid #4f8a8b;
+  position: relative;
 }
 
-.projectTile:hover {
+.tileCover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #222831;
+  z-index: 1;
+  opacity: 0;
+  top: -400px;
+  color: #eee;
+  transition: all 0.4s ease-in-out;
+}
 
+.projectTile:hover > .tileCover {
+  top: 0;
+  opacity: 0.9;
+}
+
+.projectTile img {
+  max-height: 400px;
+  transition: transform 0.3s;
+}
+
+.projectTile:hover img {
+  transform: scale(1.1);
 }
 
 .break {
@@ -38,12 +61,37 @@
   height: 0;
 }
 
-
-.projectTile img {
-  max-height: 400px;
-  transition: transform .3s;
+.tileTitle {
+  margin-top: 25%;
+  font-size: 2vw;
 }
 
-.projectTile img:hover {
-  transform: scale(1.1);
+.tileButtons {
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tileButton {
+  width: 74px;
+  height: 74px;
+  margin: 0 10px;
+  border: 3px solid #eeeeee;
+  border-radius: 20%;
+  background-color: #222831;
+  transition: all 0.3s;
+  line-height: 74px;
+  font-size: 40px;
+}
+
+.tileButtons > a {
+  color: #eeeeee;
+}
+
+.tileButton:hover {
+  cursor: pointer;
+  background-color: #4f8a8b;
 }

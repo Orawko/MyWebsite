@@ -19,11 +19,11 @@ function NavBar() {
   return <Fragment>
     <nav className={navBarClasses.join(" ")}>
       <ul id="navMenu">
-        <li className="active"><a className="navBarItem" href="#">HOME</a></li>
-        <li><a className="navBarItem" href="#">ABOUT ME</a></li>
-        <li><a className="navBarItem" href="#">SKILLS</a></li>
-        <li><a className="navBarItem" href="#">PROJECTS</a></li>
-        <li><a className="navBarItem" href="#">CONTACT</a></li>
+        <li className="active"><a className="navBarItem" href="http://localhost:3000/">HOME</a></li>
+        <li><a className="navBarItem" href="http://localhost:3000/">ABOUT ME</a></li>
+        <li><a className="navBarItem" href="http://localhost:3000/">SKILLS</a></li>
+        <li><a className="navBarItem" href="http://localhost:3000/">PROJECTS</a></li>
+        <li><a className="navBarItem" href="http://localhost:3000/">CONTACT</a></li>
       </ul>
     </nav>
   </Fragment>
