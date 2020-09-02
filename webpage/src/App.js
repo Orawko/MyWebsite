@@ -9,6 +9,7 @@ import Projects from "./components/Projects/Projects";
 import "./fontello/css/fontello.css";
 import PopUp from "./components/Projects/PopUp";
 import PopUpProvider from "./providers/PopUpProvider";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -19,10 +20,7 @@ function App() {
         <About/>
         <Motivation/>
         <Projects/>
-        <div className="Skills">Js master</div>
-        <div className="Projects">Architecture portfolio</div>
-        <div className="Experience">Comarch</div>
-        <div className="Contact">bartlomiej.orawiec@gmail.com</div>
+        <Contact/>
         <Footer/>
         <PopUp/>
       </div>

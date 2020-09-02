@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/SkillsChart.css';
+import '../../styles/About/SkillsChart.css';
 import SkillsChartBar from "./SkillsChartBar";
 
 const SkillsChart = (title, data) => {

@@ -25,7 +25,7 @@
 
 .navBarItem {
   text-decoration: none;
-  color: #eeeeee;
+  color: #ffffff;
   padding: 20px;
   transition: all .3s ease-in;
   font-size: 18px;
@@ -34,5 +34,5 @@
 }
 
 .navBarItem:hover {
-  color: #fbd46d;
+  color: #4f8a8b;
 }

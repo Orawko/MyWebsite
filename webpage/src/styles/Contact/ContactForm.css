@@ -1,0 +1,41 @@
+#contactForm {
+  width: 90%;
+  margin: 5% 0;
+}
+
+.field {
+  width: 100%;
+  background-color: #ffffff;
+  line-height: 2vw;
+  font-size: 1.4vw;
+  border-radius: 1vw;
+  font-family: "Avenir Next";
+  border: 0.4vw solid #ffffff;
+  resize: none;
+  transition: all 0.3s ease-in-out;
+  margin: 0.3vw;
+}
+
+.field:focus {
+  outline-offset: 0px;
+  outline: none;
+  border: 0.4vw solid #4f8a8b;
+}
+
+.message {
+  height: 15vw;
+}
+
+#sendButton {
+  font-size: 2vw;
+  color: white;
+  background-color: #222831;
+  border-radius: 1vw;
+  border: 0.4vw solid #4f8a8b;
+  transition: all 0.3s ease-in-out;
+}
+
+#sendButton:hover {
+  cursor: pointer;
+  color: #4f8a8b;
+}

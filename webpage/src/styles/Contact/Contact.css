@@ -1,0 +1,52 @@
+#contact {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #222831;
+  color: #ffffff;
+  margin-top: 7vw;
+}
+
+#topWave {
+  position: absolute;
+  top: -15vw;
+  width: 100%;
+  z-index: -1;
+}
+
+#contactData {
+  margin-top: -3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#leftColumn {
+  margin-top: 0;
+  width: 40%;
+  height: 45vw;
+}
+
+#contactTitle {
+  font-size: 4vw;
+  margin: 0;
+}
+
+#contactInfo {
+  font-size: 1.6vw;
+}
+
+#rightColumn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40%;
+  height: 45vw;
+}
+
+#findMeText {
+  margin: 3vw;
+  font-size: 2vw;
+  font-weight: bold;
+  text-shadow: 5px 0px 0px #4f8a8b;
+}

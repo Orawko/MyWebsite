@@ -1,7 +1,7 @@
 footer {
   text-align: center;
-  background-color: #eeeeee;
-  color: #222831;
+  background-color: #222831;
+  color: #4f8a8b;
   padding: 10px;
-  z-index: 10;
+  z-index: 3;
 }

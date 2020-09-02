@@ -65,6 +65,30 @@
       "css": "wrench",
       "code": 59398,
       "src": "fontawesome"
+    },
+    {
+      "uid": "e9e96618b0f44170930f9b179237c76e",
+      "css": "linkedin-rect",
+      "code": 62235,
+      "src": "brandico"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 61805,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4743b088aa95d6f3b6b990e770d3b647",
+      "css": "facebook-squared",
+      "code": 62216,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "76675011e906d50af404186b489fc76f",
+      "css": "codeopen",
+      "code": 61899,
+      "src": "fontawesome"
     }
   ]
 }
