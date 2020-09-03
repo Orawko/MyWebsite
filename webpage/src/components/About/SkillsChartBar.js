@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/SkillsChart.css';
+import '../../styles/About/SkillsChart.css';
 
 const CHART_MAX_VALUE = 5;
 

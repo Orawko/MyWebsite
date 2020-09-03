@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import '../../styles/Projects.css';
+import '../../styles/Projects/Projects.css';
 import ProjectTile from "./ProjectTile";
 
 

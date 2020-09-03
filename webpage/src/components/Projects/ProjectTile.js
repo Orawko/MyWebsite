@@ -25,7 +25,7 @@ const ProjectTile = (projectData) => {
           : null}
       </div>
     </div>
-    <img src={require(`../../img/${projectData.img}`)} alt={projectData.title}/>
+    <img src={require(`../../img/project_icons/${projectData.img}`)} alt={projectData.title}/>
   </div>;
 }
 
