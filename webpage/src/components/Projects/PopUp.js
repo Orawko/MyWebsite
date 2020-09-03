@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import '../../styles/Projects/PopUp.css';
-import {PopUpContext} from "../../providers/PopUpProvider";
 
+import {PopUpContext} from "../../providers/PopUpProvider";
 
 const PopUp = () => {
   const {displayPopUp, popUpData} = useContext(PopUpContext);

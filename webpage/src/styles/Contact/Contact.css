@@ -24,7 +24,7 @@
 #leftColumn {
   margin-top: 0;
   width: 40%;
-  height: 45vw;
+  height: 47vw;
 }
 
 #contactTitle {
@@ -48,5 +48,5 @@
   margin: 3vw;
   font-size: 2vw;
   font-weight: bold;
-  text-shadow: 5px 0px 0px #4f8a8b;
+  text-shadow: 0.4vw 0 0 #4f8a8b;
 }

@@ -1,0 +1,45 @@
+.notification {
+  position: relative;
+  text-align: center;
+  min-height: 2vw;
+  margin-top: -0.1vw;
+  margin-bottom: 0.6vw;
+  width: 36.3vw;
+  background-color: #ffffff;
+  line-height: 2vw;
+  font-size: 1.4vw;
+  border-radius: 1vw;
+  border: 0.4vw solid #ffffff;
+}
+
+
+.exit {
+  position: absolute;
+  right: 1vw;
+  top: 0;
+  width: 2vw;
+  height: 2vw;
+}
+
+.exit:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.exit:before, .exit:after {
+  position: absolute;
+  left: 1vw;
+  content: ' ';
+  height: 2vw;
+  width: 0.15vw;
+  background-color: #eeeeee;
+}
+
+.exit:before {
+  transform: rotate(45deg);
+}
+
+.exit:after {
+  transform: rotate(-45deg);
+}
