@@ -3,6 +3,19 @@ import emailjs from 'emailjs-com';
 import '../../styles/Contact/ContactForm.css';
 import '../../styles/Contact/Notification.css';
 
+const ERROR_COLOR = 'darkred';
+const SUCCESS_COLOR = 'seagreen';
+const DEFAULT_COLOR = 'white';
+const EMAILJS = {
+  serviceID: "service_9f9vlv4", templateID: "template_44jvtev", userID: "user_mpWlmEMAB7oBK0MOeathl"
+};
+const ERROR_MESSAGE = 'Cannot send email. Please contact directly to bartlomiej.orawiec@gmail.com';
+const SUCCESS_MESSAGE = 'Message was sent successfully';
+const INVALID_DATA = {name: 'Enter your name', email: 'Invalid email address', message: 'Enter your message'};
+// eslint-disable-next-line
+const EMAIL_REG_EXP = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
@@ -32,36 +45,36 @@ class ContactForm extends React.Component {
     });
   }
 
+  borderColor = (className, color) => document.getElementsByClassName(className)[0].style.borderColor = color;
+
   showFieldError(className, errorMessage) {
-    document.getElementsByClassName(className)[0].style.borderColor = "darkred";
-    this.displayNotification(errorMessage, "darkred");
+    this.borderColor(className, ERROR_COLOR);
+    this.displayNotification(errorMessage, ERROR_COLOR);
   }
 
   validateFields() {
-    const emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
     this.state.message
-      ? document.getElementsByClassName("message")[0].style.borderColor = "white"
-      : this.showFieldError("message", "Enter your message");
+      ? this.borderColor("message", DEFAULT_COLOR)
+      : this.showFieldError("message", INVALID_DATA.message);
 
-    emailRegExp.test(String(this.state.email).toLowerCase())
-      ? document.getElementsByClassName("email")[0].style.borderColor = "white"
-      : this.showFieldError("email", "Invalid email address")
+    EMAIL_REG_EXP.test(String(this.state.email).toLowerCase())
+      ? this.borderColor("email", DEFAULT_COLOR)
+      : this.showFieldError("email", INVALID_DATA.email)
 
     this.state.name
-      ? document.getElementsByClassName("name")[0].style.borderColor = "white"
-      : this.showFieldError("name", "Enter your name");
+      ? this.borderColor("name", DEFAULT_COLOR)
+      : this.showFieldError("name", INVALID_DATA.name);
 
-    return (emailRegExp.test(String(this.state.email).toLowerCase()) && this.state.name && this.state.message);
+    return (EMAIL_REG_EXP.test(String(this.state.email).toLowerCase())
+      && this.state.name && this.state.message);
   }
 
   handleSubmit(success) {
-    success ? this.displayNotification("Message was sent successfully.", "seagreen")
-      : this.displayNotification("Cannot send email. Please contact directly to bartlomiej.orawiec@gmail.com", "darkred");
+    success ? this.displayNotification(SUCCESS_MESSAGE, SUCCESS_COLOR)
+      : this.displayNotification(ERROR_MESSAGE, ERROR_COLOR);
   }
 
   sendMessage(event) {
-    console.log(this.state);
     let success = true;
     event.preventDefault();
     if (!this.validateFields()) {
@@ -73,7 +86,7 @@ class ContactForm extends React.Component {
       message: this.state.message
     };
     emailjs
-      .send("service_9f9vlv4__", "template_44jvtev", templateParams, "user_mpWlmEMAB7oBK0MOeathl")
+      .send(EMAILJS.serviceID, EMAILJS.templateID, templateParams, EMAILJS.userID)
       .then(
         function (response) {
           success = true;
@@ -94,6 +107,7 @@ class ContactForm extends React.Component {
 
   render() {
     const {text, color} = this.state.notification;
+
     return (
       <div id="contactForm">
         <form
@@ -130,11 +144,12 @@ class ContactForm extends React.Component {
             value={this.state.message}
           />
           <br/>
-          {text ?
-            <div className="notification" style={{backgroundColor: color, borderColor: color}}>
+          {text
+            ? <div className="notification" style={{backgroundColor: color, borderColor: color}}>
               {text}
               <div onClick={() => this.setState({notification: {}})} className="exit">{}</div>
-            </div> : null}
+            </div>
+            : null}
           <input
             id="sendButton"
             type="button"
