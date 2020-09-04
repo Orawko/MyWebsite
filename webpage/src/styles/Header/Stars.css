@@ -1,0 +1,53 @@
+@keyframes starMove {
+    from {
+        transform: translateY(0vh);
+    }
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+#starsSmall {
+    width: 1px;
+    height: 1px;
+    animation: starMove 160s linear infinite;
+}
+
+#starsSmallHidden {
+    position: absolute;
+    top: 100vh;
+    width: 1px;
+    height: 1px;
+    animation: starMove 160s linear infinite;
+}
+
+
+#starsMedium {
+    width: 2px;
+    height: 2px;
+    animation: starMove 120s linear infinite;
+}
+
+#starsMediumHidden {
+    position: absolute;
+    top: 100vh;
+    width: 2px;
+    height: 2px;
+    animation: starMove 120s linear infinite;
+}
+
+#starsBig {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    animation: starMove 80s linear infinite;
+}
+
+#starsBigHidden {
+    position: absolute;
+    top: 100vh;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    animation: starMove 80s linear infinite;
+}

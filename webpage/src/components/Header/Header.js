@@ -1,11 +1,13 @@
 import React from 'react';
-import '../styles/Header.css';
+import '../../styles/Header/Header.css';
+import Stars from "./Stars";
+
+const starsNumber = Math.floor(window.innerWidth / 4);
 
 function Header() {
+  console.log(starsNumber);
   return <div id="header">
-    <div id="starsSmall">{}</div>
-    <div id="starsMedium">{}</div>
-    <div id="starsBig">{}</div>
+    <Stars numberOfSmallStars={starsNumber}/>
     <div id="title">
       <h1 className="titleText">Hello!</h1>
       <br/>
