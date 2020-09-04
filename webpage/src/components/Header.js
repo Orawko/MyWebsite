@@ -3,9 +3,9 @@ import '../styles/Header.css';
 
 function Header() {
   return <div id="header">
-    {/*<div id="stars"></div>*/}
-    {/*<div id="stars2"></div>*/}
-    <div id="stars3"></div>
+    <div id="starsSmall">{}</div>
+    <div id="starsMedium">{}</div>
+    <div id="starsBig">{}</div>
     <div id="title">
       <h1 className="titleText">Hello!</h1>
       <br/>
