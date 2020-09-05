@@ -9,22 +9,25 @@ import Projects from "./components/Projects/Projects";
 import "./fontello/css/fontello.css";
 import PopUp from "./components/Projects/PopUp";
 import PopUpProvider from "./providers/PopUpProvider";
+import PositionProvider from "./providers/PositionProvider";
 import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
-    <PopUpProvider>
-      <div className="App">
-        <Header/>
-        <NavBar/>
-        <About/>
-        <Motivation/>
-        <Projects/>
-        <Contact/>
-        <Footer/>
-        <PopUp/>
-      </div>
-    </PopUpProvider>
+    <PositionProvider>
+      <PopUpProvider>
+        <div className="App">
+          <Header/>
+          <NavBar/>
+          <About/>
+          <Motivation/>
+          <Projects/>
+          <Contact/>
+          <Footer/>
+          <PopUp/>
+        </div>
+      </PopUpProvider>
+    </PositionProvider>
   );
 }
 

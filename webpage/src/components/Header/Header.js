@@ -5,7 +5,6 @@ import Stars from "./Stars";
 const starsNumber = Math.floor(window.innerWidth / 4);
 
 function Header() {
-  console.log(starsNumber);
   return <div id="header">
     <Stars numberOfSmallStars={starsNumber}/>
     <div id="title">

@@ -19,14 +19,13 @@
   display: flex;
   flex-direction: row;
   margin: 0;
-  padding: 10px;
   list-style-type: none;
 }
 
 .navBarItem {
   text-decoration: none;
   color: #ffffff;
-  padding: 20px;
+  padding: 12px 20px;
   transition: all .3s ease-in;
   font-size: 18px;
   font-weight: bold;
@@ -35,4 +34,5 @@
 
 .navBarItem:hover {
   color: #4f8a8b;
+  cursor: pointer;
 }

@@ -1,7 +1,6 @@
 #projects {
   width: calc(100% - 10vw);
-  padding: 5vw;
-  padding-top: 0vw;
+  padding: 0 5vw 5vw;
   text-align: center;
 }
 
