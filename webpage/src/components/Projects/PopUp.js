@@ -7,17 +7,17 @@ const PopUp = () => {
   const {displayPopUp, popUpData} = useContext(PopUpContext);
   const {title, info} = popUpData;
 
-  return <div id="popUpBackground">
-    <div id="popUp">
-      <h2 id="popUpTitle">{title}</h2>
+  return <div className="popup-background">
+    <div className="popup">
+      <h2 className="popup-title">{title}</h2>
       <div onClick={() => displayPopUp(false)} className="close">{}</div>
-      <div className="popUpLine">
-        <i className="icon-calendar"/><p className="popUpLineData">{info.date}</p>
+      <div className="popup-line">
+        <i className="icon-wrench"/><p className="popup-line-data">{info.technologies.join(", ")}</p>
       </div>
-      <div className="popUpLine">
-        <i className="icon-wrench"/><p className="popUpLineData">{info.technologies.join(", ")}</p>
+      <div className="popup-line">
+        <i className="icon-calendar"/><p className="popup-line-data">{info.date}</p>
       </div>
-      <p id="popUpDescription">{info.description}.</p>
+      <p className="popup-description">{info.description}</p>
     </div>
   </div>;
 }

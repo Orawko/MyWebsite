@@ -7,36 +7,36 @@
   margin-top: 7vw;
 }
 
-#topWave {
+#top-wave {
   position: absolute;
   top: -15vw;
   width: 100%;
   z-index: -1;
 }
 
-#contactData {
+#contact-data {
   margin-top: -3vw;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-#leftColumn {
+#left-contact-column {
   margin-top: 0;
   width: 40%;
   height: 47vw;
 }
 
-#contactTitle {
+#contact-title {
   font-size: 4vw;
   margin: 0;
 }
 
-#contactInfo {
+#contact-info {
   font-size: 1.6vw;
 }
 
-#rightColumn {
+#right-contact-column {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,7 +44,7 @@
   height: 45vw;
 }
 
-#findMeText {
+#find-me-text {
   margin: 3vw;
   font-size: 2vw;
   font-weight: bold;

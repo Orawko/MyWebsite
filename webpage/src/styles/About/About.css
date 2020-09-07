@@ -5,25 +5,27 @@
   width: 100%;
   justify-content: center;
   background-color: #eeeeee;
+  z-index: 1;
 }
 
-#aboutMe {
+#about-me {
   display: flex;
   flex-direction: column;
   width: 50%;
   background-color: #fff;
+  align-items: center;
 }
 
-#aboutMePhoto {
+#about-me-photo {
   width: 30vw;
   height: 30vw;
   overflow: hidden;
   border-radius: 20%;
-  margin: 4vw auto;
+  margin-top: 4vw;
   box-shadow: -2vw 2vw #eee;
 }
 
-#aboutMePhoto img {
+#about-me-photo img {
   max-height: 30vw;
 }
 
@@ -31,8 +33,16 @@
   width: 50%;
 }
 
-#aboutMeText {
-  margin: 1vw 4vw 4vw;
+#about-me-text {
+  margin: 0 2vw;
   font-size: 1.8vw;
   font-family: inherit;
+  text-align: center;
+}
+
+#about-me-name {
+  margin-top: 4vw;
+  margin-bottom: 1vw;
+  font-size: 2vw;
+  font-weight: bold;
 }

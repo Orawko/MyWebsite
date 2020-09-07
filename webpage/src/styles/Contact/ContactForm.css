@@ -1,4 +1,4 @@
-#contactForm {
+#contact-form {
   width: 90%;
   margin: 5% 0;
 }
@@ -27,7 +27,7 @@
   height: 15vw;
 }
 
-#sendButton {
+#send-button {
   font-size: 2vw;
   color: white;
   background-color: #222831;
@@ -38,7 +38,7 @@
   outline: none;
 }
 
-#sendButton:hover {
+#send-button:hover {
   cursor: pointer;
   color: #4f8a8b;
 }

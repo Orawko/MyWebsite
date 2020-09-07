@@ -9,12 +9,12 @@ export default function PopUpProvider({children}) {
   const displayPopUp = popUpDisplayed => {
     if (popUpDisplayed) {
       document.body.style = 'overflow: hidden';
-      document.getElementById("popUp").style.left = `calc(50% - ${POPUP_TOTAL_WIDTH} / 2)`;
-      document.getElementById("popUpBackground").style.visibility = "visible";
+      document.getElementsByClassName("popup")[0].style.left = `calc(50% - ${POPUP_TOTAL_WIDTH} / 2)`;
+      document.getElementsByClassName("popup-background")[0].style.visibility = "visible";
     } else {
       document.body.style = 'overflow: auto';
-      document.getElementById("popUp").style.left = `-${POPUP_TOTAL_WIDTH}`;
-      document.getElementById("popUpBackground").style.visibility = "hidden";
+      document.getElementsByClassName("popup")[0].style.left = `-${POPUP_TOTAL_WIDTH}`;
+      document.getElementsByClassName("popup-background")[0].style.visibility = "hidden";
     }
   }
 

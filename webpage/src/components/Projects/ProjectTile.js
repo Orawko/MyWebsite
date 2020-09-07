@@ -4,23 +4,23 @@ import {PopUpContext} from "../../providers/PopUpProvider";
 const ProjectTile = (projectData) => {
   const {setPopUpData, displayPopUp} = useContext(PopUpContext);
 
-  return <div className="projectTile" key={projectData.title}>
-    <div className="tileCover">
-      <h3 className="tileTitle">{projectData.title}</h3>
-      <div className="tileButtons">
+  return <div className="project-tile" key={projectData.title}>
+    <div className="tile-cover">
+      <h3 className="tile-title">{projectData.title}</h3>
+      <div className="tile-buttons">
         {projectData.website
           ? <a target="_blank" rel="noopener noreferrer" href={projectData.website}>
-            <div className="tileButton"><i className="icon-eye"/></div>
+            <div className="tile-button"><i className="icon-eye"/></div>
           </a>
           : null}
-        <div className="tileButton" onClick={() => {
+        <div className="tile-button" onClick={() => {
           setPopUpData(projectData);
           displayPopUp(true);
         }}>
           <i className="icon-info"/></div>
         {projectData.code
           ? <a target="_blank" rel="noopener noreferrer" href={projectData.code}>
-            <div className="tileButton"><i className="icon-code"/></div>
+            <div className="tile-button"><i className="icon-code"/></div>
           </a>
           : null}
       </div>

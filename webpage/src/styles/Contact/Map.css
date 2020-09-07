@@ -1,4 +1,4 @@
-#mapWithIcons {
+#map-with-icons {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -6,7 +6,7 @@
   height: 100%;
 }
 
-#mapContainer {
+#map-container {
   display: inline-block;
   position: relative;
   width: 30vw;
@@ -14,17 +14,12 @@
   float: right;
 }
 
-#mapContainer > img {
+#map-container > img {
   width: 30vw;
   height: 30vw;
 }
 
-#mapText {
-  font-size: 3vw;
-  font-weight: bold;
-}
-
-#mapContainer > i {
+#map-container > i {
   position: absolute;
   left: 14.5vw;
   top: 21vw;
@@ -32,7 +27,7 @@
   font-size: 3vw;
 }
 
-#mapCityName {
+#map-city-name {
   position: absolute;
   left: 17.5vw;
   top: 19.5vw;
@@ -43,16 +38,16 @@
   transition: all 0.3s ease-in-out;
 }
 
-#mapContainer > a > p {
+#map-container > a > p {
   margin: 0;
 }
 
-#mapCityName:hover {
+#map-city-name:hover {
   color: #4f8a8b;
   transform: scale(1.1);
 }
 
-#contactWebsites {
+#contact-websites {
   display: flex;
   flex-direction: row;
   margin: 2vw 0;
@@ -60,13 +55,13 @@
   justify-content: space-evenly;
 }
 
-#contactWebsites > a {
+#contact-websites > a {
   color: #ffffff;
   font-size: 3vw;
   transition: all 0.2s ease-in-out;
 }
 
-#contactWebsites > a:hover {
+#contact-websites > a:hover {
   transform: scale(1.1);
   color: #4f8a8b;
 }

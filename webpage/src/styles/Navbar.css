@@ -33,6 +33,6 @@
 }
 
 .navBarItem:hover {
-  color: #4f8a8b;
+  color: #4f8a8b !important;
   cursor: pointer;
 }

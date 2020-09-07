@@ -109,7 +109,7 @@ class ContactForm extends React.Component {
     const {text, color} = this.state.notification;
 
     return (
-      <div id="contactForm">
+      <div id="contact-form">
         <form
           className="ui form"
           id={this.props.id}
@@ -151,7 +151,7 @@ class ContactForm extends React.Component {
             </div>
             : null}
           <input
-            id="sendButton"
+            id="send-button"
             type="button"
             value="Send"
             className="ui button"

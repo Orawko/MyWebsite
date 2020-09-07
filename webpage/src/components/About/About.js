@@ -15,14 +15,16 @@ const data = {
 
 function About() {
   return <div id="about">
-    <div id="aboutMe">
-      <div id="aboutMePhoto">
+    <div id="about-me">
+      <div id="about-me-photo">
         <img src={require('../../img/me.jpg')} alt="Bartłomiej Orawiec"/>
       </div>
-      <p id="aboutMeText">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque sem at orci iaculis, quis
-        imperdiet dui posuere. Donec in arcu at libero hendrerit efficitur. Quisque luctus rutrum commodo. Cras semper
-        ut nulla id maximus.
+      <p id="about-me-name">Bartłomiej Orawiec</p>
+      <p id="about-me-text">
+        I'm a Front-End developer and computer science student at the Jagiellonian University. Creating
+        web and mobile applications is my passion which I develop for years. I am constantly trying to find better
+        solutions,
+        in fields of technology and UI design.
       </p>
     </div>
     {SkillsChart("Skills", data)}
