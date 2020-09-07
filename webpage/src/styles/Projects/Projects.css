@@ -4,13 +4,13 @@
   text-align: center;
 }
 
-#projectsTitle {
+#projects-title {
   margin-top: -3vw;
   font-size: 4vw;
   color: #222831;
 }
 
-#projectTiles {
+#projects-tiles {
   height: auto;
   margin: auto;
   width: 100%;
@@ -19,17 +19,17 @@
   justify-content: center;
 }
 
-.projectTile {
+.project-tile {
   margin: 1vw;
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
   border-radius: 10%;
   overflow: hidden;
-  border: 5px solid #4f8a8b;
   position: relative;
+  flex-basis: auto;
 }
 
-.tileCover {
+.tile-cover {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -41,17 +41,18 @@
   transition: all 0.4s ease-in-out;
 }
 
-.projectTile:hover > .tileCover {
+.project-tile:hover > .tile-cover {
   top: 0;
   opacity: 0.9;
 }
 
-.projectTile img {
-  max-height: 400px;
+.project-tile img {
+  top: 0;
+  max-height: 100%;
   transition: transform 0.3s;
 }
 
-.projectTile:hover img {
+.project-tile:hover img {
   transform: scale(1.1);
 }
 
@@ -60,12 +61,12 @@
   height: 0;
 }
 
-.tileTitle {
+.tile-title {
   margin-top: 25%;
   font-size: 2vw;
 }
 
-.tileButtons {
+.tile-buttons {
   width: 300px;
   height: 100px;
   margin: auto;
@@ -74,7 +75,7 @@
   justify-content: center;
 }
 
-.tileButton {
+.tile-button {
   width: 74px;
   height: 74px;
   margin: 0 10px;
@@ -86,11 +87,11 @@
   font-size: 40px;
 }
 
-.tileButtons > a {
+.tile-buttons > a {
   color: #eeeeee;
 }
 
-.tileButton:hover {
+.tile-button:hover {
   cursor: pointer;
   background-color: #4f8a8b;
 }

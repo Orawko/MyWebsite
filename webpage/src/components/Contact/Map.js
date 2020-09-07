@@ -1,15 +1,15 @@
 import React from 'react';
 import '../../styles/Contact/Map.css';
 
-const Map = () => <div id="mapWithIcons">
-  <div id="mapContainer">
-    <a id="mapCityName" target="_blank" rel="noopener noreferrer"
+const Map = () => <div id="map-with-icons">
+  <div id="map-container">
+    <a id="map-city-name" target="_blank" rel="noopener noreferrer"
        href="https://www.google.pl/maps/@50.0625749,19.9361899,13z">
       <p>Krakow</p></a>
     <i className="icon-location"/>
     <img src={require("../../img/Poland.svg")} alt=""/>
   </div>
-  <div id="contactWebsites">
+  <div id="contact-websites">
     <a target="_blank" rel="noopener noreferrer" href="https://github.com/Orawko"><i
       className="icon-github-circled-alt2"/></a>
     <a target="_blank" rel="noopener noreferrer"

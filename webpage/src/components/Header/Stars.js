@@ -17,23 +17,23 @@ const Stars = ({numberOfSmallStars}) => {
 
   const printStars = (kind, number) => {
     const stars = generateStarsPositions(number, "#fff");
-    document.getElementById(`stars${kind}`).style.boxShadow = stars;
-    document.getElementById(`stars${kind}Hidden`).style.boxShadow = stars;
+    document.getElementById(`stars-${kind}`).style.boxShadow = stars;
+    document.getElementById(`stars-${kind}-hidden`).style.boxShadow = stars;
   }
 
   useEffect(() => {
-    printStars("Small", numberOfSmallStars);
-    printStars("Medium", numberOfSmallStars / 4);
-    printStars("Big", numberOfSmallStars / 16);
+    printStars("small", numberOfSmallStars);
+    printStars("medium", numberOfSmallStars / 4);
+    printStars("big", numberOfSmallStars / 16);
   });
 
   return <Fragment>
-    <div id="starsSmall">{}</div>
-    <div id="starsSmallHidden">{}</div>
-    <div id="starsMedium">{}</div>
-    <div id="starsMediumHidden">{}</div>
-    <div id="starsBig">{}</div>
-    <div id="starsBigHidden">{}</div>
+    <div id="stars-small">{}</div>
+    <div id="stars-small-hidden">{}</div>
+    <div id="stars-medium">{}</div>
+    <div id="stars-medium-hidden">{}</div>
+    <div id="stars-big">{}</div>
+    <div id="stars-big-hidden">{}</div>
   </Fragment>
 }
 

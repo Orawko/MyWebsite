@@ -1,4 +1,4 @@
-@keyframes starMove {
+@keyframes stars-move {
     from {
         transform: translateY(0vh);
     }
@@ -7,47 +7,47 @@
     }
 }
 
-#starsSmall {
+#stars-small {
     width: 1px;
     height: 1px;
-    animation: starMove 160s linear infinite;
+    animation: stars-move 160s linear infinite;
 }
 
-#starsSmallHidden {
+#stars-small-hidden {
     position: absolute;
     top: 100vh;
     width: 1px;
     height: 1px;
-    animation: starMove 160s linear infinite;
+    animation: stars-move 160s linear infinite;
 }
 
 
-#starsMedium {
+#stars-medium {
     width: 2px;
     height: 2px;
-    animation: starMove 120s linear infinite;
+    animation: stars-move 120s linear infinite;
 }
 
-#starsMediumHidden {
+#stars-medium-hidden {
     position: absolute;
     top: 100vh;
     width: 2px;
     height: 2px;
-    animation: starMove 120s linear infinite;
+    animation: stars-move 120s linear infinite;
 }
 
-#starsBig {
+#stars-big {
     width: 4px;
     height: 4px;
     border-radius: 4px;
-    animation: starMove 80s linear infinite;
+    animation: stars-move 80s linear infinite;
 }
 
-#starsBigHidden {
+#stars-big-hidden {
     position: absolute;
     top: 100vh;
     width: 4px;
     height: 4px;
     border-radius: 4px;
-    animation: starMove 80s linear infinite;
+    animation: stars-move 80s linear infinite;
 }

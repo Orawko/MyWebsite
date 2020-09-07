@@ -6,9 +6,9 @@ function Motivation() {
     <img src={require("../img/up.svg")} alt=""/>
     <div id="motivation">
       <img id="tree" src={require("../img/tree.svg")} alt=""/>
-      <div id="motivationContent">
-        <h2 id="motivationTitle">Good start to grow</h2>
-        <p id="motivationText">At the beginning of my career I decided to focus on JavaScript, the basement for modern
+      <div id="motivation-content">
+        <h2 id="motivation-title">Good start to grow</h2>
+        <p id="motivation-text">At the beginning of my career I decided to focus on JavaScript, the basement for modern
           web frameworks and libraries. Having deep understanding of it gives me ability to avoid errors and learn new
           technologies much quicker.</p>
       </div>

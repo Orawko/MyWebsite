@@ -6,6 +6,7 @@
   color: #ffffff;
   position: relative;
   margin: -1vw 0;
+  z-index: 1;
 }
 
 #tree {
@@ -17,18 +18,18 @@
   z-index: 0;
 }
 
-#motivationContent {
+#motivation-content {
   width: 40vw;
   padding: 0 2.5vw;
   color: #ffffff;
   margin-left: 52vw;
 }
 
-#motivationTitle {
+#motivation-title {
   font-size: 4vw;
   margin-top: 0;
 }
 
-#motivationText {
+#motivation-text {
   font-size: 2vw;
 }
