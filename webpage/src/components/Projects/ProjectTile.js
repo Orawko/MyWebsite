@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import {PopUpContext} from "../../providers/PopUpProvider";
+import "../../styles/Projects/ProjectTile.css";
 
 const ProjectTile = (projectData) => {
   const {setPopUpData, displayPopUp} = useContext(PopUpContext);

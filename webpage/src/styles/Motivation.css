@@ -1,35 +1,106 @@
 #motivation {
-  background-color: #222831;
-  text-align: center;
   width: 100%;
-  height: 20vw;
+  margin: -5rem 0;
+  font-size: 1rem;
+  z-index: 2;
+  background-color: #222831;
+}
+
+#motivation-container {
+  width: 110em;
   color: #ffffff;
+  text-align: center;
+  margin: auto;
   position: relative;
-  margin: -1vw 0;
-  z-index: 1;
 }
 
 #tree {
   position: absolute;
-  top: -15vw;
-  left: 2vw;
-  width: 48vw;
-  height: 48vw;
+  top: -17em;
+  left: 2em;
+  width: 52em;
+  height: 52em;
   z-index: 0;
 }
 
 #motivation-content {
-  width: 40vw;
-  padding: 0 2.5vw;
+  width: 45em;
+  padding: 0 5em;
   color: #ffffff;
-  margin-left: 52vw;
+  margin-left: 50em;
 }
 
 #motivation-title {
-  font-size: 4vw;
-  margin-top: 0;
+  font-size: 5em;
+  margin: 0 auto;
 }
 
 #motivation-text {
-  font-size: 2vw;
+  font-size: 2.2em;
+  padding: 0 2em;
+}
+
+.wave {
+  z-index: 1;
+}
+
+@media (max-width: 1023px) {
+  #motivation-container {
+    width: 110em;
+  }
+
+  #motivation {
+    font-size: 0.55rem;
+    margin-bottom: -10em;
+  }
+
+  #motivation-content {
+    width: 50em;
+    padding: 0;
+    margin-left: calc(70% - 25em);
+
+  }
+
+  #tree {
+    top: -15em;
+    left: 0;
+  }
+
+  #motivation-text {
+    font-size: 2.8em;
+    padding: 1em;
+  }
+
+}
+
+@media (max-width: 639px) {
+  #motivation-container {
+    width: 100%;
+  }
+
+  #motivation {
+    font-size: 0.55rem;
+  }
+
+  #motivation-content {
+    width: 50em;
+    padding: 0;
+    margin: 50em auto 0;
+  }
+
+  #motivation-text {
+    font-size: 3.3em;
+    padding: 0;
+  }
+
+  #tree {
+    top: -55em;
+    left: calc(50% - 27em);
+  }
+}
+
+@media (min-width: 1440px) {
+  #motivation-container {
+    margin: -5em auto;
+  }
 }

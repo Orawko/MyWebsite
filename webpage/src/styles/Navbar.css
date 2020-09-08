@@ -1,11 +1,12 @@
 .navBar {
   background-color: #191e25;
-  height: 50px;
-  border-bottom: 3px solid #4f8a8b;
+  height: 5rem;
+  border-bottom: .3rem solid #4f8a8b;
   position: absolute;
   top: 100vh;
   width: 100%;
-  z-index: 3;
+  z-index: 5;
+  overflow: hidden;
 }
 
 .scrolled {
@@ -16,23 +17,45 @@
 }
 
 #navMenu {
+  width: 100em;
   display: flex;
   flex-direction: row;
-  margin: 0;
+  margin: 0 auto;
   list-style-type: none;
 }
 
 .navBarItem {
   text-decoration: none;
   color: #ffffff;
-  padding: 12px 20px;
+  padding: 1rem 2rem;
   transition: all .3s ease-in;
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 3.3rem;
 }
 
 .navBarItem:hover {
-  color: #4f8a8b !important;
+  color: #4f8a8b;
   cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+  #navMenu {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .navBarItem {
+    padding: 1rem 0.6rem;
+    font-size: 1.6rem;
+  }
+
+  #navMenu {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
 }

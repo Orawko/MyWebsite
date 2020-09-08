@@ -1,97 +1,61 @@
 #projects {
-  width: calc(100% - 10vw);
-  padding: 0 5vw 5vw;
+  width: 100%;
   text-align: center;
+  font-size: 0.9rem;
 }
 
 #projects-title {
-  margin-top: -3vw;
-  font-size: 4vw;
+  margin-top: -1em;
+  font-size: 5em;
   color: #222831;
 }
 
 #projects-tiles {
+  width: 90em;
   height: auto;
-  margin: auto;
-  width: 100%;
+  margin: 5em auto 8em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.project-tile {
-  margin: 1vw;
-  width: 380px;
-  height: 380px;
-  border-radius: 10%;
-  overflow: hidden;
-  position: relative;
-  flex-basis: auto;
+
+@media (max-width: 1023px) {
+  #projects-tiles {
+    width: 90em;
+  }
+
+  #projects {
+    font-size: 0.6rem;
+  }
 }
 
-.tile-cover {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #222831;
-  z-index: 1;
-  opacity: 0;
-  top: -400px;
-  color: #eee;
-  transition: all 0.4s ease-in-out;
+
+@media (max-width: 639px) {
+  #projects-tiles {
+    width: 45em;
+  }
+
+  #projects-title {
+    margin-top: -1em;
+  }
+
+  #projects {
+    font-size: 0.7rem;
+  }
 }
 
-.project-tile:hover > .tile-cover {
-  top: 0;
-  opacity: 0.9;
-}
+@media (min-width: 1440px) {
+  #projects-tiles {
+    width: 130em;
+  }
 
-.project-tile img {
-  top: 0;
-  max-height: 100%;
-  transition: transform 0.3s;
-}
+  #projects-title {
+    margin-top: -2em;
+  }
 
-.project-tile:hover img {
-  transform: scale(1.1);
-}
 
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
-.tile-title {
-  margin-top: 25%;
-  font-size: 2vw;
-}
-
-.tile-buttons {
-  width: 300px;
-  height: 100px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.tile-button {
-  width: 74px;
-  height: 74px;
-  margin: 0 10px;
-  border: 3px solid #eeeeee;
-  border-radius: 20%;
-  background-color: #222831;
-  transition: all 0.3s;
-  line-height: 74px;
-  font-size: 40px;
-}
-
-.tile-buttons > a {
-  color: #eeeeee;
-}
-
-.tile-button:hover {
-  cursor: pointer;
-  background-color: #4f8a8b;
+  #projects {
+    font-size: 1.1rem;
+  }
 }

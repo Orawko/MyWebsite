@@ -1,7 +1,7 @@
 import React, {createContext, useState} from 'react';
 
 export const PopUpContext = createContext({});
-const POPUP_TOTAL_WIDTH = "61vw"
+const POPUP_TOTAL_WIDTH = window.innerWidth > 639 ? "81em" : "43em";
 
 export default function PopUpProvider({children}) {
   const [popUpData, setPopUpData] = useState({info: {technologies: []}});

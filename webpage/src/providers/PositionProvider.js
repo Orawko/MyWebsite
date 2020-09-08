@@ -1,8 +1,7 @@
 import React, {createContext} from 'react';
 
 export const PositionContext = createContext({});
-const NAV_HEIGHT = 42;
-const WAVE_OFFSET = 120;
+const WAVE_OFFSET = 180;
 
 export default function PositionProvider({children}) {
   const getElementPosition = id => document.getElementById(`${id}`).offsetTop;
@@ -16,20 +15,20 @@ export default function PositionProvider({children}) {
 
   const scrollToAbout = () => {
     window.scrollTo({
-      top: getElementPosition('about') - NAV_HEIGHT,
+      top: getElementPosition('about'),
       behavior: 'smooth',
     });
   };
   const scrollToProjects = () => {
     window.scrollTo({
-      top: getElementPosition('projects') - NAV_HEIGHT - WAVE_OFFSET,
+      top: getElementPosition('projects') - WAVE_OFFSET,
       behavior: 'smooth',
     });
   };
 
   const scrollToContact = () => {
     window.scrollTo({
-      top: getElementPosition('contact') - NAV_HEIGHT - WAVE_OFFSET,
+      top: getElementPosition('contact') - WAVE_OFFSET,
       behavior: 'smooth',
     });
   };

@@ -10,28 +10,28 @@ function NavBar() {
     window.scrollY > window.innerHeight
       ? setScrolled(true)
       : setScrolled(false);
-
-  const setHighlightItem = () => {
-    (function clearHighlight() {
-      ['navHome', 'navAbout', 'navProjects', 'navContact']
-        .map(item => document.getElementById(item).style.color = '#fff');
-    })();
-    const elementVisible = elementId => window.scrollY > document.getElementById(elementId).offsetTop - 200;
-    const setHighlight = elementId => document.getElementById(elementId).style.color = '#4f8a8b';
-
-    if (elementVisible('contact')) {
-      setHighlight('navContact');
-    } else if (elementVisible('projects')) {
-      setHighlight('navProjects');
-    } else if (elementVisible('about')) {
-      setHighlight('navAbout');
-    } else {
-      setHighlight('navHome');
-    }
-  }
+  //
+  // const setHighlightItem = () => {
+  //   (function clearHighlight() {
+  //     ['navHome', 'navAbout', 'navProjects', 'navContact']
+  //       .map(item => document.getElementById(item).style.color = '#fff');
+  //   })();
+  //   const elementVisible = elementId => window.scrollY > document.getElementById(elementId).offsetTop - 400;
+  //   const setHighlight = elementId => document.getElementById(elementId).style.color = '#4f8a8b';
+  //
+  //   if (elementVisible('contact')) {
+  //     setHighlight('navContact');
+  //   } else if (elementVisible('projects')) {
+  //     setHighlight('navProjects');
+  //   } else if (elementVisible('about')) {
+  //     setHighlight('navAbout');
+  //   } else {
+  //     setHighlight('navHome');
+  //   }
+  // }
 
   useEffect(() => window.addEventListener('scroll', showNavBar))
-  useEffect(() => window.addEventListener('scroll', setHighlightItem));
+  // useEffect(() => window.addEventListener('scroll', setHighlightItem));
 
   let navBarClasses = ['navBar'];
   if (scrolled) {

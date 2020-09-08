@@ -8,7 +8,7 @@
 }
 
 #title {
-  font-size: 1.2vw;
+  font-size: 1.5rem;
   display: inline-block;
   position: absolute;
   left: 20%;
@@ -18,7 +18,6 @@
 
 .title-text {
   margin: 0;
-  font-family: 'Avenir Next', sans-serif;
 }
 
 .green {
@@ -31,7 +30,7 @@
   color: #ffffff;
   left: 20%;
   top: 80%;
-  font-size: 3vw;
+  font-size: 4rem;
   z-index: 3;
   animation: jump 2s linear infinite;
   transition: all .3s ease-in-out;
@@ -50,4 +49,33 @@
     transform: translateY(2vh);
   }
 }
+
+
+@media (max-width: 1023px) {
+  #title {
+    font-size: 1.5rem;
+    left: 10%;
+    top: 50%;
+  }
+
+  .jump-arrow {
+    font-size: 4rem;
+    left: 10%;
+  }
+}
+
+@media (max-width: 639px) {
+  #title {
+    font-size: 1.3rem;
+    left: 10%;
+    top: 50%;
+  }
+
+  .jump-arrow {
+    font-size: 4rem;
+    left: 70%;
+  }
+}
+
+
 

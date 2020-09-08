@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
   width: calc(100vw - (100vw - 100%));
 }
 
