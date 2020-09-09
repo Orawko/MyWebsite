@@ -9,7 +9,7 @@ function Header() {
   const {scrollToAbout} = useContext(PositionContext);
   return <div id="header">
     <Stars numberOfSmallStars={starsNumber}/>
-    <div id="title">
+    <div id="title" className="disable-select">
       <h1 className="title-text">Hello!</h1>
       <br/>
       <h1 className="title-text">I'm <span className="green">Bartek</span>,</h1>

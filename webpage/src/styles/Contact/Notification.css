@@ -1,24 +1,24 @@
 .notification {
   position: relative;
   text-align: center;
-  min-height: 2vw;
-  margin-top: -0.1vw;
-  margin-bottom: 0.6vw;
-  width: 36.3vw;
+  min-height: 2em;
+  margin-top: -0.1em;
+  margin-bottom: 0.8em;
+  width: 22.7em;
   background-color: #ffffff;
-  line-height: 2vw;
-  font-size: 1.4vw;
-  border-radius: 1vw;
-  border: 0.4vw solid #ffffff;
+  line-height: 2em;
+  font-size: 1.8em;
+  border-radius: 1em;
+  border: 0.3em solid #ffffff;
 }
 
 
 .exit {
   position: absolute;
-  right: 1vw;
+  right: 1em;
   top: 0;
-  width: 2vw;
-  height: 2vw;
+  width: 2em;
+  height: 2em;
 }
 
 .exit:hover {
@@ -29,10 +29,10 @@
 
 .exit:before, .exit:after {
   position: absolute;
-  left: 1vw;
+  left: 1em;
   content: ' ';
-  height: 2vw;
-  width: 0.15vw;
+  height: 2em;
+  width: 0.15em;
   background-color: #eeeeee;
 }
 
@@ -42,4 +42,33 @@
 
 .exit:after {
   transform: rotate(-45deg);
+}
+
+@media (max-width: 1023px) {
+  .notification {
+    margin: 0.1em auto 0.5em;
+    font-weight: bolder;
+  }
+
+}
+
+
+@media (max-width: 639px) {
+  .notification {
+    width: 16em;
+    margin: 0.1em auto 0.5em;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+
+  .exit:before, .exit:after {
+    height: 1.5em;
+  }
+
+  .exit {
+    width: 1.5em;
+    height: 1.5em;
+    top: .2em
+  }
+
 }

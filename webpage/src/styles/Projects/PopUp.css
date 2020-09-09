@@ -3,54 +3,56 @@
   height: 100%;
   position: fixed;
   top: 0;
-  z-index: 4;
+  z-index: 7;
   background-color: rgba(0, 0, 0, 0.7);
   overflow: auto;
   visibility: hidden;
   white-space: pre-line;
+  font-size: 1rem;
 }
 
 .popup {
   position: absolute;
-  top: 10vw;
-  left: -60vw;
-  width: 50vw;
-  border: 0.5vw solid #222831;
-  border-radius: 5vw;
-  padding: 5vw;
+  top: 10em;
+  left: -60em;
+  width: 70em;
+  border: 0.5em solid #222831;
+  border-radius: 5em;
+  padding: 5em;
   background-color: #eeeeee;
   transition: all 0.5s ease-out;
 }
 
 .popup-title {
-  font-size: 4vw;
+  font-size: 4em;
   color: #222831;
-  margin: 0 0 1vw;
+  margin: 0 0 1em;
 }
 
 .popup-line {
   display: flex;
-  height: 3vw;
-  line-height: 3vw;
+  height: 2.2em;
   flex-direction: row;
-  font-size: 1.5vw;
+  font-size: 2.2em;
+  margin: 0;
+  padding: 0;
 }
 
 .popup-description {
-  margin: 1vw;
-  font-size: 1.5vw;
+  margin: 1em;
+  font-size: 2em;
 }
 
 .popup-line-data {
-  margin: 0 1vw;
+  margin: 0 1em;
 }
 
 .close {
   position: absolute;
-  right: 3vw;
-  top: 3vw;
-  width: 4vw;
-  height: 4vw;
+  right: 3em;
+  top: 3em;
+  width: 4em;
+  height: 4em;
 }
 
 .close:hover {
@@ -61,10 +63,10 @@
 
 .close:before, .close:after {
   position: absolute;
-  left: 2vw;
+  left: 2em;
   content: ' ';
-  height: 3vw;
-  width: 0.2vw;
+  height: 3em;
+  width: 0.4em;
   background-color: #4f8a8b;
 }
 
@@ -74,4 +76,69 @@
 
 .close:after {
   transform: rotate(-45deg);
+}
+
+
+@media (max-width: 1023px) {
+  .popup-background {
+    font-size: 0.75rem;
+  }
+
+  .popup-line {
+    min-height: 2.5em;
+    height: auto;
+    font-size: 2.5em;
+  }
+
+  .popup-description {
+    margin: 0.5em;
+    font-size: 2.5em;
+  }
+
+}
+
+
+@media (max-width: 639px) {
+  .popup-background {
+    font-size: 0.7rem;
+  }
+
+  .popup {
+    left: 2em;
+    width: 40em;
+    padding: 1em;
+  }
+
+  .popup-title {
+    font-size: 4em;
+    margin: 1.5em auto 1em;
+    text-align: center;
+  }
+
+  .popup-line {
+    min-height: 2.5em;
+    height: auto;
+    margin: 0.5em;
+    font-size: 2.5em;
+  }
+
+  .popup-description {
+    margin: 0.5em;
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 1440px) {
+  #projects-tiles {
+    width: 130em;
+  }
+
+  #projects-title {
+    margin-top: -2em;
+  }
+
+
+  #projects {
+    font-size: 1.1rem;
+  }
 }

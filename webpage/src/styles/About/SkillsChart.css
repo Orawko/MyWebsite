@@ -1,18 +1,18 @@
 #skills-chart {
-  width: 50%;
-  padding: 2vw;
+  width: 50em;
+  padding: 2em;
   background-color: #fff;
   text-align: center;
 }
 
 #skills-chart-title {
-  font-size: 4vw;
-  margin: 1vw;
+  font-size: 5em;
+  margin: 0.5em;
   color: #222831;
 }
 
 #chart-bars {
-  width: 100%;
+  width: 50em;
   display: flex;
   flex-direction: column;
 }
@@ -20,32 +20,29 @@
 .skills-chart-bar {
   display: flex;
   flex-direction: row;
-  height: 5vw;
+  height: 6em;
 }
 
 .chart-bar-key {
   text-align: right;
-  margin: 0.5vw;
-  line-height: 4vw;
-  width: 13vw;
-  font-size: 2vw;
+  margin: 0.5em;
+  width: 7em;
+  font-size: 2.7em;
   color: #222831;
 }
 
 .chart-bar-value {
   display: flex;
   flex-direction: row;
-  height: 4.6vw;
   text-align: right;
 }
 
 .chart-dot {
-  width: 2.4vw;
-  height: 2.4vw;
-  margin: 1.3vw 0.7vw;
+  width: 3em;
+  height: 3em;
+  margin: 1.5em 1em;
   background-color: #eeeeee;
-  /*border: 0.2vw solid #222831;*/
-  border-radius: 30%;
+  border-radius: 1em;
 }
 
 .selected {

@@ -5,6 +5,7 @@
   background-color: #222831;
   color: #ffffff;
   margin-top: 7vw;
+  font-size: 1rem;
 }
 
 #top-wave {
@@ -15,38 +16,111 @@
 }
 
 #contact-data {
-  margin-top: -3vw;
+  width: 100em;
+  margin: -3em auto auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
 #left-contact-column {
-  margin-top: 0;
-  width: 40%;
-  height: 47vw;
+  margin-top: -5em;
+  width: 50em;
 }
 
 #contact-title {
-  font-size: 4vw;
+  font-size: 5em;
   margin: 0;
 }
 
 #contact-info {
-  font-size: 1.6vw;
+  font-size: 2em;
 }
 
 #right-contact-column {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 40%;
-  height: 45vw;
+  justify-content: center;
+  width: 50em;
+  height: 50em;
 }
 
 #find-me-text {
-  margin: 3vw;
-  font-size: 2vw;
+  margin: 2em;
+  font-size: 2.8em;
   font-weight: bold;
-  text-shadow: 0.4vw 0 0 #4f8a8b;
+  text-shadow: 0.15em 0 0 #4f8a8b;
+}
+
+@media (max-width: 1023px) {
+  #contact {
+    font-size: 0.9rem;
+  }
+
+  #contact-data {
+    width: 100%;
+  }
+
+  #contact-info {
+    font-size: 2.2em;
+  }
+
+  #contact-data {
+    flex-direction: column;
+    margin: 5em auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  #find-me-text {
+    margin: 0.5em;
+  }
+
+  #right-contact-column {
+    margin-top: 2em;
+    width: 100%;
+  }
+
+  #left-contact-column {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 639px) {
+  #contact {
+    font-size: 0.7rem;
+  }
+
+  #contact-data {
+    width: 100%;
+  }
+
+  #contact-info {
+    font-size: 2.2em;
+  }
+
+  #contact-data {
+    flex-direction: column;
+    margin: 5em auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  #find-me-text {
+    margin: 0.5em;
+  }
+
+  #right-contact-column {
+    width: 100%;
+  }
+
+  #left-contact-column {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+
 }
