@@ -1,15 +1,17 @@
-import React, {Fragment, useEffect} from 'react';
+import React, {Fragment, useContext, useEffect} from 'react';
 import '../styles/Navbar.css';
+import {PositionContext} from "../providers/PositionProvider";
 
 function NavBar() {
   const [scrolled, setScrolled] = React.useState(false);
+  const {scrollToHome, scrollToAbout, scrollToProjects, scrollToContact} = useContext(PositionContext);
 
-  const handleScroll = () =>
+  const showNavBar = () =>
     window.scrollY > window.innerHeight
       ? setScrolled(true)
       : setScrolled(false);
 
-  useEffect(() => window.addEventListener('scroll', handleScroll))
+  useEffect(() => window.addEventListener('scroll', showNavBar))
 
   let navBarClasses = ['navBar'];
   if (scrolled) {
@@ -18,12 +20,11 @@ function NavBar() {
 
   return <Fragment>
     <nav className={navBarClasses.join(" ")}>
-      <ul id="navMenu">
-        <li className="active"><a className="navBarItem" href="#">HOME</a></li>
-        <li><a className="navBarItem" href="#">ABOUT ME</a></li>
-        <li><a className="navBarItem" href="#">SKILLS</a></li>
-        <li><a className="navBarItem" href="#">PROJECTS</a></li>
-        <li><a className="navBarItem" href="#">CONTACT</a></li>
+      <ul id="navMenu" className="disable-select">
+        <li className="navBarItem" id="navHome" onClick={scrollToHome}>HOME</li>
+        <li className="navBarItem" id="navAbout" onClick={scrollToAbout}>ABOUT</li>
+        <li className="navBarItem" id="navProjects" onClick={scrollToProjects}>PROJECTS</li>
+        <li className="navBarItem" id="navContact" onClick={scrollToContact}>CONTACT</li>
       </ul>
     </nav>
   </Fragment>

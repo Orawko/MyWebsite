@@ -1,33 +1,139 @@
 #motivation {
-  background-color: #222831;
-  text-align: center;
-  width: 100%;
-  color: #eeeeee;
+  max-width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  z-index: 2;
   position: relative;
-  margin: -1vw 0;
+  overflow: hidden;
+}
+
+#motivation-background {
+  margin-top: 5em;
+  background-color: #222831;
+}
+
+#motivation-container {
+  width: 110em;
+  max-width: 100%;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  background-color: #222831;
+
 }
 
 #tree {
   position: absolute;
-  top: -15vw;
-  left: 2vw;
-  width: 48vw;
-  height: 48vw;
+  top: -17em;
+  left: 2em;
+  width: 52em;
+  height: 52em;
   z-index: 0;
 }
 
-#motivationContent {
-  width: 40vw;
-  padding: 0 2.5vw;
-  color: #eeeeee;
-  margin-left: 52vw;
+#motivation-content {
+  width: 45em;
+  padding: 0 5em;
+  color: #ffffff;
+  margin-left: 47em;
+  margin-top: -10em;
+  margin-bottom: -10em;
 }
 
-#motivationTitle {
-  font-size: 4vw;
-  margin-top: 0;
+#motivation-title {
+  font-size: 5em;
+  margin: 0 auto;
 }
 
-#motivationText {
-  font-size: 2vw;
+#motivation-text {
+  font-size: 2.2em;
+  padding: 0 2em;
+}
+
+.wave {
+  z-index: 1;
+}
+
+
+@media (max-width: 1023px) {
+  #motivation-container {
+    width: 110em;
+  }
+
+  #motivation-background {
+    padding-top: 5em;
+    margin-top: -5em;
+    margin-bottom: -15em;
+    background-color: #222831;
+  }
+
+  #motivation {
+    font-size: 0.6rem;
+    margin-bottom: -10em;
+  }
+
+  #motivation-content {
+    width: 50em;
+    padding: 0;
+    margin-left: calc(70% - 25em);
+  }
+
+  #tree {
+    top: -15em;
+    left: 0;
+  }
+
+  #motivation-text {
+    font-size: 2.8em;
+    padding: 1em;
+  }
+
+}
+
+@media (max-width: 639px) {
+  #motivation-container {
+    width: 100%;
+  }
+
+  #motivation {
+    font-size: 0.55rem;
+    margin-top: 1em;
+  }
+
+  #motivation-background {
+    margin-top: -2em;
+    margin-bottom: 5em;
+  }
+
+  #motivation-content {
+    width: 50em;
+    padding: 0;
+    margin: 35em auto -10em;
+  }
+
+  #motivation-text {
+    font-size: 3.3em;
+    padding: 0;
+  }
+
+  #tree {
+    top: -50em;
+    left: calc(50% - 27em);
+  }
+}
+
+@media (min-width: 1440px) {
+  #motivation-container {
+    margin: -5em auto;
+  }
+
+  #motivation-content {
+    margin-left: 52em;
+  }
+
+  #motivation-background {
+    margin: -5em auto;
+    background-color: #222831;
+  }
 }

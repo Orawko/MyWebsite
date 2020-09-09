@@ -1,0 +1,77 @@
+.project-tile {
+  margin: 1em;
+  width: 40em;
+  height: 40em;
+  border-radius: 4em;
+  overflow: hidden;
+  position: relative;
+  flex-basis: auto;
+
+}
+
+.tile-cover {
+  position: absolute;
+  height: 40em;
+  width: 40em;
+  background-color: #222831;
+  z-index: 3;
+  opacity: 0;
+  top: -40em;
+  color: #eee;
+  transition: all 0.4s ease-in-out;
+}
+
+.project-tile:hover > .tile-cover {
+  top: 0;
+  opacity: 0.9;
+}
+
+.project-tile img {
+  top: 0;
+  max-height: 100%;
+  transition: transform 0.3s;
+}
+
+.project-tile:hover img {
+  transform: scale(1.1);
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.tile-title {
+  margin-top: 4em;
+  font-size: 2.8em;
+}
+
+.tile-buttons {
+  width: 30em;
+  height: 10em;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tile-button {
+  width: 2em;
+  height: 2em;
+  margin: 0 0.1em;
+  border: 0.1em solid #eeeeee;
+  border-radius: .5em;
+  background-color: #222831;
+  transition: all 0.3s;
+  line-height: 2em;
+  font-size: 4em;
+}
+
+.tile-buttons > a {
+  color: #eeeeee;
+}
+
+.tile-button:hover {
+  cursor: pointer;
+  background-color: #4f8a8b;
+}

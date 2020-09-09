@@ -1,0 +1,53 @@
+@keyframes stars-move {
+    from {
+        transform: translateY(0vh);
+    }
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+#stars-small {
+    width: 1px;
+    height: 1px;
+    animation: stars-move 160s linear infinite;
+}
+
+#stars-small-hidden {
+    position: absolute;
+    top: 100vh;
+    width: 1px;
+    height: 1px;
+    animation: stars-move 160s linear infinite;
+}
+
+
+#stars-medium {
+    width: 2px;
+    height: 2px;
+    animation: stars-move 120s linear infinite;
+}
+
+#stars-medium-hidden {
+    position: absolute;
+    top: 100vh;
+    width: 2px;
+    height: 2px;
+    animation: stars-move 120s linear infinite;
+}
+
+#stars-big {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    animation: stars-move 80s linear infinite;
+}
+
+#stars-big-hidden {
+    position: absolute;
+    top: 100vh;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    animation: stars-move 80s linear infinite;
+}

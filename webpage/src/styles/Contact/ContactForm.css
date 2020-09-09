@@ -1,0 +1,69 @@
+#contact-form {
+  width: 40em;
+  margin: 2em 0;
+}
+
+.field {
+  width: 20em;
+  background-color: #ffffff;
+  line-height: 1.5em;
+  font-size: 2em;
+  border-radius: 1em;
+  font-family: "Avenir Next", sans-serif;
+  border: 0.3em solid #ffffff;
+  resize: none;
+  transition: all 0.3s ease-in-out;
+  margin: 0.2em;
+}
+
+.field:focus {
+  outline-offset: 0;
+  outline: none;
+  border: 0.3em solid #4f8a8b !important;
+}
+
+
+.message {
+  height: 9em;
+}
+
+#send-button {
+  font-size: 2.5em;
+  color: white;
+  background-color: #222831;
+  border-radius: 1em;
+  border: 0.2em solid #4f8a8b;
+  transition: all 0.3s ease-in-out;
+  outline-offset: 0;
+  outline: none;
+}
+
+#send-button:hover {
+  cursor: pointer;
+  color: #4f8a8b;
+}
+
+@media (max-width: 1023px) {
+  #contact-form {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 639px) {
+  .field {
+    line-height: 2em;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+
+  #send-button {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1440px) {
+
+}
