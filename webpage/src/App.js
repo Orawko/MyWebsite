@@ -11,6 +11,10 @@ import PopUp from "./components/Projects/PopUp";
 import PopUpProvider from "./providers/PopUpProvider";
 import PositionProvider from "./providers/PositionProvider";
 import Contact from "./components/Contact/Contact";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 function App() {
   return (

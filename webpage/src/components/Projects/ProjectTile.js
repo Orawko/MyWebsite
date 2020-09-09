@@ -5,7 +5,8 @@ import "../../styles/Projects/ProjectTile.css";
 const ProjectTile = (projectData) => {
   const {setPopUpData, displayPopUp} = useContext(PopUpContext);
 
-  return <div className="project-tile" key={projectData.title}>
+  return <div className="project-tile" key={projectData.title} data-aos="zoom-in" data-aos-once="true"
+              data-aos-delay="300">
     <div className="tile-cover">
       <h3 className="tile-title">{projectData.title}</h3>
       <div className="tile-buttons">
