@@ -4,6 +4,7 @@
   font-size: 1rem;
   z-index: 2;
   position: relative;
+  overflow: hidden;
 }
 
 #motivation-background {
@@ -13,6 +14,7 @@
 
 #motivation-container {
   width: 110em;
+  max-width: 100%;
   color: #ffffff;
   text-align: center;
   margin: auto;

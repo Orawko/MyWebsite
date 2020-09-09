@@ -14,7 +14,7 @@ const data = {
 }
 
 function About() {
-  return <div id="about">
+  return <div id="about" className="disable-select">
     <div id="about-me-container">
       <div id="about-me">
         <div id="about-me-photo" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
