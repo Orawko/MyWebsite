@@ -1,7 +1,7 @@
 import React, {createContext} from 'react';
 
 export const PositionContext = createContext({});
-const WAVE_OFFSET = 180;
+const WAVE_OFFSET = window.innerWidth > 639 ? 180 : 60;
 
 export default function PositionProvider({children}) {
   const getElementPosition = id => document.getElementById(`${id}`).offsetTop;

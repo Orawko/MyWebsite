@@ -45,6 +45,10 @@
 }
 
 @media (max-width: 1023px) {
+  .notification {
+    margin: 0.1em auto 0.5em;
+    font-weight: bolder;
+  }
 
 }
 
@@ -53,11 +57,18 @@
   .notification {
     width: 16em;
     margin: 0.1em auto 0.5em;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 2.5em;
   }
-}
 
-@media (min-width: 1440px) {
+  .exit:before, .exit:after {
+    height: 1.5em;
+  }
+
+  .exit {
+    width: 1.5em;
+    height: 1.5em;
+    top: .2em
+  }
 
 }

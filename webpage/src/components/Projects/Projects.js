@@ -7,14 +7,14 @@ import ProjectTile from "./ProjectTile";
 const Projects = () => {
   const switchPopUp = data => alert(data);
 
-  const numberOfTilesInRow = (function () {
+  const numberOfTilesInRow = () => {
     if (window.innerWidth < 640) {
       return 1;
     } else if (window.innerWidth < 1440) {
       return 2;
     }
     return 3;
-  })();
+  };
 
   const BreakingProjectTile = tileData => {
     return <Fragment key={tileData.title}>
@@ -27,7 +27,7 @@ const Projects = () => {
     <h1 id="projects-title">Projects</h1>
     <div id="projects-tiles">
       {projects.map((p, index) => {
-        return index % numberOfTilesInRow === (numberOfTilesInRow - 1)
+        return index % numberOfTilesInRow() === (numberOfTilesInRow() - 1)
           ? BreakingProjectTile(p)
           : ProjectTile(p)
       })}

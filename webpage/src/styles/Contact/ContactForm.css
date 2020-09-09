@@ -44,13 +44,23 @@
 }
 
 @media (max-width: 1023px) {
-
+  #contact-form {
+    width: 100%;
+  }
 }
 
 
 @media (max-width: 639px) {
+  .field {
+    line-height: 2em;
+  }
+
   #contact-form {
     width: 100%;
+  }
+
+  #send-button {
+    font-size: 3em;
   }
 }
 

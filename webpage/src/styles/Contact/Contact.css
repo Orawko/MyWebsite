@@ -54,7 +54,37 @@
 }
 
 @media (max-width: 1023px) {
+  #contact {
+    font-size: 0.9rem;
+  }
 
+  #contact-data {
+    width: 100%;
+  }
+
+  #contact-info {
+    font-size: 2.2em;
+  }
+
+  #contact-data {
+    flex-direction: column;
+    margin: 5em auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  #find-me-text {
+    margin: 0.5em;
+  }
+
+  #right-contact-column {
+    margin-top: 2em;
+    width: 100%;
+  }
+
+  #left-contact-column {
+    width: 100%;
+  }
 }
 
 
@@ -67,11 +97,27 @@
     width: 100%;
   }
 
+  #contact-info {
+    font-size: 2.2em;
+  }
+
   #contact-data {
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: 5em auto;
     text-align: center;
     align-items: center;
+  }
+
+  #find-me-text {
+    margin: 0.5em;
+  }
+
+  #right-contact-column {
+    width: 100%;
+  }
+
+  #left-contact-column {
+    width: 100%;
   }
 }
 

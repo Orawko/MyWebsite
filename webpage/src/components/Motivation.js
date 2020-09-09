@@ -1,10 +1,10 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import '../styles/Motivation.css';
 
 function Motivation() {
-  return <Fragment>
-    <img src={require("../img/up.svg")} className="wave" alt=""/>
-    <div id="motivation">
+  return <div id="motivation">
+    <img src={require("../img/up.svg")} className="wave wave-top" alt=""/>
+    <div id="motivation-background">
       <div id="motivation-container">
         <img id="tree" src={require("../img/tree.svg")} alt=""/>
         <div id="motivation-content">
@@ -16,8 +16,8 @@ function Motivation() {
         </div>
       </div>
     </div>
-    <img src={require("../img/down.svg")} className="wave" alt=""/>
-  </Fragment>;
+    <img src={require("../img/down.svg")} className="wave wave-bottom" alt=""/>
+  </div>
 }
 
 export default Motivation;
